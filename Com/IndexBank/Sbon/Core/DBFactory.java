@@ -1,5 +1,5 @@
 package Com.IndexBank.Sbon.Core;
 
 public interface DBFactory {
-    public  Connection createConnection();
+    public DBConnection createConnection();
 }

@@ -1,12 +1,13 @@
 package Com.IndexBank.Sbon.Core;
 
+import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class SQLiteConnection implements Connection {
+public class SQLiteConnection implements DBConnection {
     @Override
-    public void connect() {
-        java.sql.Connection connTest = null;
+    public Connection connect() {
+        Connection connTest = null;
         try {
             Class.forName("org.sqlite.JDBC");
             connTest = DriverManager.getConnection("jdbc:sqlite:D:/Arsbon/src/Com/IndexBank/Sbon/DB/PersonalData.db");
@@ -16,5 +17,6 @@ public class SQLiteConnection implements Connection {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
+        return connTest;
     }
 }

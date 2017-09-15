@@ -2,7 +2,7 @@ package Com.IndexBank.Sbon.Core;
 
 public class MySQLFactory implements DBFactory {
     @Override
-    public Connection createConnection() {
+    public DBConnection createConnection() {
         return new MySQLConnection();
     }
 }
