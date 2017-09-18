@@ -1,4 +1,4 @@
-package Com.IndexBank.Sbon.Core;
+package Com.IndexBank.Sbon.Utils;
 
 import java.sql.Connection;
 

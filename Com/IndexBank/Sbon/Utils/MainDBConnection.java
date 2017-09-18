@@ -1,10 +1,10 @@
-package Com.IndexBank.Sbon.Core;
+package Com.IndexBank.Sbon.Utils;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class MySQLConnection implements DBConnection {
+public class MainDBConnection implements DBConnection {
 
     @Override
     public Connection connect() {
